@@ -8,7 +8,7 @@ This module has two components-- One for authentcation and another for displayin
 
  **Step 1**
 
-` import FirebaseAuth, { AuthStatusButton } from "./login"; `
+` import FirebaseAuth, { AuthStatusButton } from "firebase-auth-component"; `
 
  **Step 2**
 
