@@ -18,4 +18,4 @@ const fb_provider = new firebase.auth.FacebookAuthProvider();
 const twitter_provider = new firebase.auth.TwitterAuthProvider();
 const github_provider = new firebase.auth.GithubAuthProvider();
 
-export { google_provider, fb_provider, twitter_provider, github_provider };
+export { google_provider, fb_provider, twitter_provider, github_provider }
