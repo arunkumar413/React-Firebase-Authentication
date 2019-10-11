@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
 import firebase from "firebase";
+import {google_provider, fb_provider, twitter_provider, github_provider} from './firebaseConfig'
 
 // import firebase from "./firebase_config";
 import { FacebookLoginButton } from "react-social-login-buttons";
@@ -19,12 +20,7 @@ class FirebaseAuth extends React.Component {
       password2: " ",
       error: " ",
       user_details: null,
-      google_provider: new firebase.auth.GoogleAuthProvider(),
-      fb_provider: new firebase.auth.FacebookAuthProvider(),
-      twitter_provider: new firebase.auth.TwitterAuthProvider(),
-      github_provider: new firebase.auth.GithubAuthProvider()
     };
-    firebase.initializeApp(this.props.fireBaseConfig);
   }
 
   login_handler = provider => {
@@ -152,14 +148,14 @@ class FirebaseAuth extends React.Component {
           <GoogleLoginButton
             iconSize="16px"
             size="34px"
-            onClick={() => this.login_handler(this.state.google_provider)}
+            onClick={() => this.login_handler(google_provider)}
           />
 
           <FacebookLoginButton
             iconSize="16px"
             size="34px"
             onClick={() => {
-              this.login_handler(this.state.fb_provider);
+              this.login_handler(fb_provider);
             }}
           />
 
@@ -167,7 +163,7 @@ class FirebaseAuth extends React.Component {
             iconSize="16px"
             size="34px"
             onClick={() => {
-              this.login_handler(this.state.github_provider);
+              this.login_handler(github_provider);
             }}
           />
 
@@ -175,7 +171,7 @@ class FirebaseAuth extends React.Component {
             iconSize="16px"
             size="34px"
             onClick={() => {
-              this.login_handler(this.state.twitter_provider);
+              this.login_handler(twitter_provider);
             }}
           />
         </div>
