@@ -227,4 +227,7 @@ class AuthStatusButton extends React.Component {
   }
 }
 
-export { FirebaseAuth as default, AuthStatusButton };
+function test(){
+  return "Firebase test OK"
+}
+export { FirebaseAuth as default, AuthStatusButton, test };

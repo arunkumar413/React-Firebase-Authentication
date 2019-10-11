@@ -1,6 +1,6 @@
 {
   "name": "firebase-auth-component",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": " A simple reactjs authentication component for firebase",
   "homepage": "https://github.com/arunkumar413/React-Firebase-Authentication",
   "keywords": [
@@ -22,11 +22,5 @@
     "react-scripts": "3.0.1",
     "react-social-login-buttons": "2.3.1"
   
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
   }
 }
